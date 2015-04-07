@@ -9,7 +9,7 @@ DATA = {
     90: 1824881,
     82: 714422,
     45: 1137701,
-    0 : 326226,
+    0: 326226,
     -15: 417203,
     -56: 333525,
     67: 323451,
@@ -39,15 +39,14 @@ def iter_dict_funky_sum(DATA):
         total(int): a running total integer
 
     Return:
-        Will return the total 
+        Will return the total
 
     Example:
         >>> import task_07
         >>> task_07.iter_dict_funky_sum(task_07.DATA)
-        140166242    
+        140166242
     """
     total = 0
-    
     for key, value in DATA.iteritems():
         funkytotal = (value + total) - key
         return funkytotal

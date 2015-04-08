@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Using dictionary iteration with iteritems()."""
 
-DATA = {
+DICT1 = {
     2: 7493945,
     76: 4654320,
     3: 4091979,
@@ -31,22 +31,39 @@ DATA = {
     8: 4337229
 }
 
+DICT2 = {
+    1: 10,
+    2: 20,
+    3: 30,
+    4: 40,
+    5: 50,
+    6: 60,
+    7: 70,
+    8: 80,
+    9: 90,
+    37: 100
+}
 
-def iter_dict_funky_sum(DATA):
-    """This is a .
+
+def iter_dict_funky_sum(myvar):
+    """This is a dictionary iteration using iteritems().
 
     Arg:
-        total(int): a running total integer
+        myvar(int): a running total integer
 
     Return:
-        Will return the total
+        Will return the funky_total
 
     Example:
         >>> import task_07
-        >>> task_07.iter_dict_funky_sum(task_07.DATA)
-        140166242
+        >>> task_07.iter_dict_funky_sum(DICT1)
+        139791890
+
+        >>> import task_07
+        >>> task_07.iter_dict_funky_sum(DICT2)
+        468
     """
-    total = 0
-    for key, value in DATA.iteritems():
-        funkytotal = (value + total) - key
-        return funkytotal
+    funky_total = 0
+    for key, value in myvar.iteritems():
+        funky_total = funky_total + value - key
+    return funky_total

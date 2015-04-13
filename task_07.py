@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Using dictionary iteration with iteritems()."""
 
-DICT1 = {
+DATA1 = {
     2: 7493945,
     76: 4654320,
     3: 4091979,
@@ -31,7 +31,7 @@ DICT1 = {
     8: 4337229
 }
 
-DICT2 = {
+DATA2 = {
     1: 10,
     2: 20,
     3: 30,

@@ -3,7 +3,10 @@
 """Creating a dictionary."""
 
 GRADE_DATA = {
-    'Luke': {'subject': ['math', 'etiquette', 'grammar', 'gym']},
-    'Han': {'subject': ['math', 'etiquette', 'grammar', 'gym']},
-    'C-3PO': {'subject': ['math', 'etiquette', 'grammar', 'gym']}
-}
+    'Luke Skywalker': {
+        'math': 'B', 'etiquette': 'B+', 'grammar': 'B', 'gym': 'A'},
+    'Han Solo': {
+        'math': 'A-', 'etiquette': 'C-', 'grammar': 'B', 'gym': 'B'},
+    'C-3PO': {
+        'math': 'C', 'etiquette': 'A+', 'grammar': 'A', 'gym': 'F'}
+    }
